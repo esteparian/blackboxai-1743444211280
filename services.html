@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Esteparian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #0077CC;
+            --accent: #FFA500;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <?php include '_includes/header.html'; ?>
+
+    <main>
+        <!-- Services Hero -->
+        <section class="bg-blue-600 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Nuestros Servicios</h1>
+                <p class="text-xl max-w-2xl mx-auto">Soluciones tecnológicas integrales para transformar su negocio</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="flex items-start mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-robot text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Automatización Industrial</h3>
+                                <p class="text-gray-600">Sistemas IoT para monitoreo y control de procesos industriales con análisis predictivo.</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 pl-22">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Control de maquinaria</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sistemas SCADA</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Integración MES/ERP</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="flex items-start mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-fingerprint text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Seguridad Biométrica</h3>
+                                <p class="text-gray-600">Sistemas de identificación avanzada para control de acceso y registro de personal.</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 pl-22">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Reconocimiento facial</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Lectores de huella</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sistemas anti-fraude</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="flex items-start mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-video text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Vigilancia Inteligente</h3>
+                                <p class="text-gray-600">Sistemas CCTV con análisis de video y detección de anomalías en tiempo real.</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 pl-22">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Cámaras IP 4K</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Reconocimiento de placas</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Almacenamiento en la nube</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="flex items-start mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Soluciones Energéticas</h3>
+                                <p class="text-gray-600">Tecnología para gestión eficiente de energía renovable y convencional.</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 pl-22">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sistemas solares</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Monitoreo de consumo</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Redes inteligentes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include '_includes/footer.html'; ?>
+</body>
+</html>
