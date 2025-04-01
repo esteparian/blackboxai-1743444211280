@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrias | Esteparian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #0077CC;
+            --accent: #FFA500;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .industry-card {
+            transition: transform 0.3s ease;
+        }
+        .industry-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <?php include '_includes/header.php'; ?>
+
+    <main>
+        <!-- Industries Hero -->
+        <section class="bg-gray-900 text-white py-20 relative">
+            <div class="absolute inset-0">
+                <img src="https://images.pexels.com/photos/2103864/pexels-photo-2103864.jpeg" alt="Industrial Facility" class="w-full h-full object-cover opacity-40">
+            </div>
+            <div class="relative container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Soluciones por Industria</h1>
+                <p class="text-xl max-w-2xl mx-auto">Tecnología especializada para los desafíos específicos de su sector</p>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Manufacturing -->
+                    <div class="industry-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/162568/pexels-photo-162568.jpeg" alt="Manufacturing" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-industry text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3">Manufactura</h3>
+                            <p class="text-gray-600 mb-4">Automatización de líneas de producción, control de calidad asistido por visión artificial y sistemas MES integrados.</p>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Reducción de tiempos de ciclo</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Monitoreo predictivo</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Integración ERP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="industry-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/4220967/pexels-photo-4220967.jpeg" alt="Security" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3">Seguridad</h3>
+                            <p class="text-gray-600 mb-4">Sistemas integrales para protección de instalaciones, control de acceso y monitoreo remoto 24/7.</p>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Biometría avanzada</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Videovigilancia AI</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Sensores perimetrales</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Energy -->
+                    <div class="industry-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/221012/pexels-photo-221012.jpeg" alt="Energy" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-bolt text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3">Energía</h3>
+                            <p class="text-gray-600 mb-4">Tecnología para generación distribuida, monitoreo de consumo y optimización de recursos energéticos.</p>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Sistemas solares</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Gestión de microredes</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Eficiencia energética</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Studies -->
+                <div class="mt-20">
+                    <h2 class="text-3xl font-bold text-center mb-12">Casos de Éxito</h2>
+                    <div class="bg-white rounded-lg shadow-md p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Planta Automotriz</h3>
+                                <p class="text-gray-600 mb-4">Implementación de sistema de visión artificial para control de calidad reduciendo defectos en 37%.</p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                        <i class="fas fa-chart-line text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">+37%</p>
+                                        <p class="text-sm text-gray-500">Reducción de defectos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Centro Comercial</h3>
+                                <p class="text-gray-600 mb-4">Sistema de seguridad biométrica reduciendo accesos no autorizados en 92%.</p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                        <i class="fas fa-lock text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">92%</p>
+                                        <p class="text-sm text-gray-500">Menos accesos no autorizados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include '_includes/footer.php'; ?>
+</body>
+</html>
