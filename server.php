@@ -3,9 +3,9 @@
 $request = $_SERVER['REQUEST_URI'];
 $filePath = __DIR__ . $request;
 
-// Default to index.html if root is requested
+// Default to index.php if root is requested
 if ($request === '/') {
-    include __DIR__ . '/index.html';
+    include __DIR__ . '/index.php';
     exit;
 }
 
@@ -31,5 +31,5 @@ if (file_exists($filePath) && is_file($filePath)) {
 
 // 404 Not Found
 http_response_code(404);
-include __DIR__ . '/404.html';
+include __DIR__ . '/404.php';
 ?>
