@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #003366;
+  --secondary: #0077CC;
+  --accent: #FFA500;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
